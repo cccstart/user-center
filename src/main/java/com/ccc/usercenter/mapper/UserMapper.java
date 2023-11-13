@@ -1,8 +1,17 @@
 package com.ccc.usercenter.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ccc.usercenter.model.User;
+import com.ccc.usercenter.model.domain.User;
+import org.springframework.stereotype.Repository;
 
+/**
+ * @Entity generator.domain.User
+ */
+@Repository
 public interface UserMapper extends BaseMapper<User> {
 
 }
+
+
+
+
