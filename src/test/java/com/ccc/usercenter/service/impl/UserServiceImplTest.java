@@ -20,37 +20,37 @@ class UserServiceImplTest {
     @Test
     public void testRegister(){
 
-        long l = userService.userRegister("", "12345678", "12345678");
+        long l = userService.userRegister("", "12345678", "12345678","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("chang", "", "12345678");
+        l = userService.userRegister("chang", "", "12345678","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("chang", "12345678", "");
+        l = userService.userRegister("chang", "12345678", "","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("ccc", "12345678", "12345678");
+        l = userService.userRegister("ccc", "12345678", "12345678","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("chang", "123456", "123456");
+        l = userService.userRegister("chang", "123456", "123456","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("chang", "12345678", "123456789");
+        l = userService.userRegister("chang", "12345678", "123456789","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("chang%%", "12345678", "12345678");
+        l = userService.userRegister("chang%%", "12345678", "12345678","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("chang%%", "12345678", "12345678");
+        l = userService.userRegister("chang%%", "12345678", "12345678","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
-        l = userService.userRegister("123", "12345678", "12345678");
+        l = userService.userRegister("123", "12345678", "12345678","1");
         Assertions.assertEquals(true,l<0);
         System.out.println(l);
 //        l = userService.userRegister("chang", "12345678", "12345678");
 //        Assertions.assertEquals(true,l>0);
 //        System.out.println(l);
-        l = userService.userRegister("chenchen", "12345678", "12345678");
+        l = userService.userRegister("chenchen", "12345678", "12345678","1");
         Assertions.assertEquals(true,l>0);
         System.out.println(l);
 

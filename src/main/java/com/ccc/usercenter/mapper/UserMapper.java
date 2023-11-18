@@ -5,7 +5,7 @@ import com.ccc.usercenter.model.domain.User;
 import org.springframework.stereotype.Repository;
 
 /**
- * @Entity generator.domain.User
+ * @Entity com.ccc.usercenter.model.domain.User
  */
 @Repository
 public interface UserMapper extends BaseMapper<User> {
